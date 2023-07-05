@@ -40,12 +40,18 @@
 
         <div id="app">
 
-            <ul>
+            <ul v-if="emails.length==10">
                 <li v-for="(singleEmail,index) in emails" >
                     {{singleEmail}}
 
                 </li>
             </ul>
+            
+            <div v-else>
+
+                dati in generazione...
+
+            </div>
 
         </div>
 
